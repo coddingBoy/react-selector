@@ -2,7 +2,7 @@ var path = require("path")
 
 module.exports = {
     entry: {
-        "SlideSlector": ["./src/SlideSelector.js"],
+        "react-selector": ["./src/react-selector.js"],
     },
     externals: {
         "react": "react",
