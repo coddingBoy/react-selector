@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define(["react", "react-dom", "iscroll-react"], factory);
 	else if(typeof exports === 'object')
-		exports["SlideSelector"] = factory(require("react"), require("react-dom"), require("iscroll-react"));
+		exports["react-slide-selector"] = factory(require("react"), require("react-dom"), require("iscroll-react"));
 	else
-		root["SlideSelector"] = factory(root["react"], root["react-dom"], root["iscroll-react"]);
+		root["react-slide-selector"] = factory(root["react"], root["react-dom"], root["iscroll-react"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_3__, __WEBPACK_EXTERNAL_MODULE_66__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
