@@ -7,7 +7,7 @@ import { render } from 'react-dom'
 //import { connect } from 'react-redux'
 import { hashHistory } from 'react-router'
 //import TitleBar from "../../product/components/TitleBar"
-import ReactIScroll from "iscroll-react"
+import IScroll from "iscroll-react"
 import iScroll from "iscroll"
 import * as _ from 'lodash'
 //import {utils} from "../../../root/libs/utils"
@@ -96,12 +96,12 @@ export default class SlideSelect extends Component {
         }
         return (
             <div>
-            <ReactIScroll iScroll={iScroll} onScrollStart={this.onScrollStart}>
+            <IScroll iScroll={iScroll} onScrollStart={this.onScrollStart}>
     <dl
         onTouchTap={this.handleTouchTap}>
         {this.renderList().addressList}
     </dl>
-        </ReactIScroll>
+        </IScroll>
         <ul id="wrapper"
         className="letterBar"
         onTouchMove={this.handleTouchMove}
