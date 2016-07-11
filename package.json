@@ -1,6 +1,6 @@
 {
   "name": "react-slide-selector",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react selector with the slide feather such as contact lists, address lists",
   "main": "dist/SlideSelector.js",
   "scripts": {
