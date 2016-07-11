@@ -4,6 +4,7 @@
 # How to use
  install from npm i react-seletor. and import the <SlideSelector> component. and then pass the data prop that required to be an object. for example,
 
+
   import React, { Component, PropTypes } from 'react'
   import SlideSelect from './SlideSelect'
   import * as _ from 'lodash'
@@ -27,6 +28,7 @@
           )
       }
   }
+
 
 #Note
 this is the test version, the stable version will be update to 2.0.0
