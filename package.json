@@ -1,0 +1,51 @@
+{
+  "name": "react-selector",
+  "version": "1.0.0",
+  "description": "react selector with the slide feather such as contact lists, address lists",
+  "main": "dist/SlideSelector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coddingBoy/react-selector.git"
+  },
+  "keywords": [
+    "react",
+    "react",
+    "webpack",
+    "react",
+    "selector",
+    "contact",
+    "list",
+    "address",
+    "list"
+  ],
+  "author": "coddingBoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coddingBoy/react-selector/issues"
+  },
+  "homepage": "https://github.com/coddingBoy/react-selector#readme",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-class-properties": "^6.9.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.19.0",
+    "iscroll": "^5.2.0",
+    "iscroll-react": "^1.0.3",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "lodash": "^4.13.1",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-ultra-select": "^1.0.10",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
