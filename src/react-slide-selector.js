@@ -9,7 +9,7 @@ import { hashHistory } from 'react-router'
 //import TitleBar from "../../product/components/TitleBar"
 import ReactIScroll from "iscroll-react"
 import iScroll from "iscroll"
-import _ from 'lodash'
+import * as _ from 'lodash'
 //import {utils} from "../../../root/libs/utils"
 //import {setInsuredInfo, queryProCityAreaList, checkDistrictInsuranceState} from "../actions/index"
 
@@ -44,7 +44,7 @@ export default class SlideSelect extends Component {
             letterList = []
         _.forEach(this.props.data.list, (values, key) => {
             letterList.push(<li key={keyIndex++} className="letterBarItems" style={{height: '4%'}}>{key}</li>)
-        array.push(<dt key={keyIndex++}className="firstCapitialRow" style={firstCaptiialRowStyle}>{key}</dt>)
+        array.push(<dt key={keyIndex++} className="firstCapitialRow" style={firstCaptiialRowStyle}>{key}</dt>)
         _.forEach(values, (value) => {
             array.push(<dd className="selectItems" key={keyIndex++} style={{padding: '5px 10px'}}>{value[this.props.data.show]}</dd>)
     })
@@ -53,6 +53,9 @@ export default class SlideSelect extends Component {
             letterList: letterList,
             addressList: array
         }
+    }
+    componentDidUpdate() {
+        this.renderList()
     }
 
     //slide sidebar to local the element that equal to the sidebar element
