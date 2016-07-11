@@ -87,7 +87,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _lodash = __webpack_require__(68);
 
-	var _lodash2 = _interopRequireDefault(_lodash);
+	var _ = _interopRequireWildcard(_lodash);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -137,7 +139,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var array = [],
 	                keyIndex = 0,
 	                letterList = [];
-	            _lodash2.default.forEach(this.props.data.list, function (values, key) {
+	            _.forEach(this.props.data.list, function (values, key) {
 	                letterList.push(_react2.default.createElement(
 	                    'li',
 	                    { key: keyIndex++, className: 'letterBarItems', style: { height: '4%' } },
@@ -148,7 +150,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    { key: keyIndex++, className: 'firstCapitialRow', style: firstCaptiialRowStyle },
 	                    key
 	                ));
-	                _lodash2.default.forEach(values, function (value) {
+	                _.forEach(values, function (value) {
 	                    array.push(_react2.default.createElement(
 	                        'dd',
 	                        { className: 'selectItems', key: keyIndex++, style: { padding: '5px 10px' } },
@@ -160,6 +162,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	                letterList: letterList,
 	                addressList: array
 	            };
+	        }
+	    }, {
+	        key: 'componentDidUpdate',
+	        value: function componentDidUpdate() {
+	            this.renderList();
 	        }
 
 	        //slide sidebar to local the element that equal to the sidebar element
